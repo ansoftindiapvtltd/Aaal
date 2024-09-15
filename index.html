@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaal Enterprises LLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aaal Enterprises LLC</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Aaal Enterprises LLC</h2>
+            <p>We are a leading provider of innovative solutions for businesses of all sizes.</p>
+        </section>
+        <section id="about" class="hidden">
+            <h2>About Us</h2>
+            <p>Aaal Enterprises LLC was founded in 2010 with a mission to deliver cutting-edge technology solutions to our clients.</p>
+        </section>
+        <section id="services" class="hidden">
+            <h2>Our Services</h2>
+            <ul>
+                <li>IT Consulting</li>
+                <li>Software Development</li>
+                <li>Cloud Solutions</li>
+                <li>Cybersecurity</li>
+            </ul>
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>Email: info@aaalenterprises.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Business St, Tech City, TC 12345</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aaal Enterprises LLC. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            function showSection(sectionId) {
+                sections.forEach(section => {
+                    if (section.id === sectionId) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const sectionId = this.getAttribute('href').substring(1);
+                    showSection(sectionId);
+                });
+            });
+
+            // Show home section by default
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
