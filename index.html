@@ -10,120 +10,116 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
         }
         header {
-            background-color: #2c3e50;
-            color: #ecf0f1;
+            background-color: #f4f4f4;
             text-align: center;
             padding: 1rem;
         }
         nav {
-            background-color: #34495e;
+            background-color: #333;
+            color: #fff;
             padding: 0.5rem;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
         }
         nav ul li {
-            margin: 0 1rem;
+            display: inline;
+            margin-right: 10px;
         }
         nav ul li a {
-            color: #ecf0f1;
+            color: #fff;
             text-decoration: none;
         }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
+        .content {
+            padding: 20px;
         }
-        section {
-            margin-bottom: 2rem;
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
         }
-        footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .hidden {
-            display: none;
+        .image-container img {
+            max-width: 45%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="/api/placeholder/200/100" alt="Aaal Enterprises LLC Logo" />
         <h1>Aaal Enterprises LLC</h1>
     </header>
+    
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#party-rental">Party Rental</a></li>
+            <li><a href="#vegetarian-catering">Vegetarian Catering</a></li>
+            <li><a href="#price">Price</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    
+    <div class="content">
         <section id="home">
             <h2>Welcome to Aaal Enterprises LLC</h2>
-            <p>We are a leading provider of innovative solutions for businesses of all sizes.</p>
+            <p>Your one-stop solution for party rentals and vegetarian catering.</p>
+            <div class="image-container">
+                <img src="/api/placeholder/400/300" alt="Party Setup" />
+                <img src="/api/placeholder/400/300" alt="Catering Display" />
+            </div>
         </section>
-        <section id="about" class="hidden">
+        
+        <section id="about">
             <h2>About Us</h2>
-            <p>Aaal Enterprises LLC was founded in 2010 with a mission to deliver cutting-edge technology solutions to our clients.</p>
+            <p>Aaal Enterprises LLC has been serving the community since 2010, providing top-notch party rental equipment and delicious vegetarian catering.</p>
+            <div class="image-container">
+                <img src="/api/placeholder/400/300" alt="Our Team" />
+                <img src="/api/placeholder/400/300" alt="Our History" />
+            </div>
         </section>
-        <section id="services" class="hidden">
-            <h2>Our Services</h2>
-            <ul>
-                <li>IT Consulting</li>
-                <li>Software Development</li>
-                <li>Cloud Solutions</li>
-                <li>Cybersecurity</li>
-            </ul>
+        
+        <section id="party-rental">
+            <h2>Party Rental</h2>
+            <p>We offer a wide range of party rental equipment, from tables and chairs to decorations and sound systems.</p>
+            <div class="image-container">
+                <img src="/api/placeholder/400/300" alt="Rental Equipment" />
+                <img src="/api/placeholder/400/300" alt="Party Setup" />
+            </div>
         </section>
-        <section id="contact" class="hidden">
+        
+        <section id="vegetarian-catering">
+            <h2>Vegetarian Catering</h2>
+            <p>Our vegetarian catering service provides delicious and healthy options for all your events.</p>
+            <div class="image-container">
+                <img src="/api/placeholder/400/300" alt="Vegetarian Dishes" />
+                <img src="/api/placeholder/400/300" alt="Catering Event" />
+            </div>
+        </section>
+        
+        <section id="price">
+            <h2>Pricing</h2>
+            <p>We offer competitive pricing for both our party rental equipment and catering services. Contact us for a custom quote.</p>
+            <div class="image-container">
+                <img src="/api/placeholder/400/300" alt="Pricing Chart" />
+                <img src="/api/placeholder/400/300" alt="Special Offers" />
+            </div>
+        </section>
+        
+        <section id="contact">
             <h2>Contact Us</h2>
+            <p>Get in touch with us for bookings, inquiries, or custom requests.</p>
             <p>Email: info@aaalenterprises.com</p>
             <p>Phone: (555) 123-4567</p>
-            <p>Address: 123 Business St, Tech City, TC 12345</p>
+            <div class="image-container">
+                <img src="/api/placeholder/400/300" alt="Contact Form" />
+                <img src="/api/placeholder/400/300" alt="Map Location" />
+            </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Aaal Enterprises LLC. All rights reserved.</p>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('nav a');
-            const sections = document.querySelectorAll('main section');
-
-            function showSection(sectionId) {
-                sections.forEach(section => {
-                    if (section.id === sectionId) {
-                        section.classList.remove('hidden');
-                    } else {
-                        section.classList.add('hidden');
-                    }
-                });
-            }
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const sectionId = this.getAttribute('href').substring(1);
-                    showSection(sectionId);
-                });
-            });
-
-            // Show home section by default
-            showSection('home');
-        });
-    </script>
+    </div>
 </body>
 </html>
