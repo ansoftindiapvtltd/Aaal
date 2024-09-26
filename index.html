@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaal Enterprises LLC</title>
+	
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,12 +49,38 @@
 			background-color: #f2f3b0;
             height: auto;
         }
+		
+        .menu-section {
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .menu-header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .menu-content {
+            display: none;
+            padding: 10px;
+        }
+        .menu-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .menu-content li {
+            padding: 5px 0;
+        }
+		
     </style>
 </head>
 <body>
     <header>
-        <h1>Aaal Enterprises LLC</h1>
+        <h1><u>Aaal Enterprises LLC</u></h1>
 	    <br>
+		<h2>(919) 375-3561 </h2>
 	    <h3> Our service area covers the heart of the Research Triangle, including Apex, Cary, Chapel Hill, Durham, Garner, Holly Springs, Morrisville, Raleigh, the Research Triangle Park (RTP), and Wake Forest." </h3>
     </header>
     
@@ -63,7 +90,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#party-rental">Party Rental</a></li>
             <li><a href="#vegetarian-catering">Vegetarian Catering</a></li>
-            <li><a href="#price">Price</a></li>
+            <li><a href="#BouncyHouse">Bouncy House</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
@@ -73,18 +100,45 @@
             <h2>Welcome to Aaal Enterprises LLC</h2>
             <p>Your one-stop solution for party rentals and vegetarian catering. and Our service area covers the heart of the Research Triangle, including Apex, Cary, Chapel Hill, Durham, Garner, Holly Springs, Morrisville, Raleigh, the Research Triangle Park (RTP), and Wake Forest."</p>
             <div class="image-container">
-                <img src="8.jpeg" alt="Party Setup" />
-                <img src="1.jpeg" alt="Catering Display" />
-
+				<img src="baloon.jpeg" alt="Catering Display" />
+				<img src="ganesh.jpeg" alt="Our Team" />
             </div>
         </section>
         
+		
+		<section id="images1">
+            <h2>More Items</h2>
+            <p></p>
+            <div class="image-container">                
+					<img src="chair.jpeg" alt="Special Offers" />
+					<img src="6feet.jpeg" alt="Special Offers" />
+            </div>
+        </section>
+
+		<section id="images4">
+            <h2>More Items</h2>
+            <p></p>
+            <div class="image-container">
+                <img src="4feet.jpeg" alt="Special Offers" />
+				<img src="5feet.jpeg" alt="Special Offers" />
+            </div>
+        </section>
+		<section id="images5">
+            <h2>More Items</h2>
+            <p></p>
+            <div class="image-container">
+				<img src="4chair.jpeg" alt="Special Offers" />
+				<img src="4feet2.jpeg" alt="Party Setup" />
+            </div>
+        </section>
+		
         <section id="about">
             <h2>About Us</h2>
             <p>Aaal Enterprises LLC has been serving the community since 2010, providing top-notch party rental equipment and delicious vegetarian catering.</p>
             <div class="image-container">				
-                <img src="8.jpeg" alt="Our Team" />
-                <img src="7.jpeg" alt="Our History" />
+          
+                <img src="diwali.jpeg" alt="Our History" />
+				<img src="6feet.jpeg" alt="Our History" />
             </div>
         </section>
         
@@ -92,73 +146,176 @@
             <h2>Party Rental</h2>
             <p>We offer a wide range of party rental equipment, from tables and chairs to decorations and sound systems.</p>
             <div class="image-container">
-                <img src="11.jpeg" alt="Rental Equipment" />
-                <img src="12.jpeg" alt="Party Setup" />
+                 <img src="num.jpeg" alt="Party Setup" />
+				 <img src="num3.jpeg" alt="Our History" />
             </div>
         </section>
         
         <section id="vegetarian-catering">
             <h2>Vegetarian Catering</h2>
             <p>Our vegetarian catering service provides delicious and healthy options for all your events.</p>
-            <div class="image-container">
+				<div class="image-container">
+					<img src="Cat.png" alt="Party Setup" />
+					<img src="num2.jpeg" alt="Party Setup" />
+					
+				</div>
+				<h1>Restaurant Menu</h1>
 
-				<img src="4.jpeg" alt="Special Offers" />
-				<img src="3.jpeg" alt="Special Offers" />
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Welcome Drink</div>
+					<div class="menu-content">
+						<ul>
+							<li>Mango Lassi</li>
+							<li>Mango Shake</li>
+							<li>Masala chas/buttermilk</li>
+							<li>Lemon Soda</li>
+							<li>Mint Mocktail</li>
+							<li>Jal Jeera</li>
+						</ul>
+					</div>
+				</div>
 
-            </div>
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Starters</div>
+					<div class="menu-content">
+						<ul>
+							<li>Noodles</li>
+							<li>Samosa Chat</li>
+							<li>Aloo Tikki Chat</li>
+							<li>Pani puri</li>
+							<li>Pav bhaji</li>
+							<li>Mix Veg Pakoda</li>
+							<li>Gobi Pakoda</li>
+							<li>Bread Vada</li>
+							<li>Aloo Bonda</li>
+							<li>Tomato Soup</li>
+							<li>Hot n Sour Soup</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Veggies</div>
+					<div class="menu-content">
+						<ul>
+							<li>Paneer Lababdar</li>
+							<li>Paneer Butter Masala</li>
+							<li>Shahi Paneer</li>
+							<li>Kadhai Paneer</li>
+							<li>Dhaba Style Masala Paneer</li>
+							<li>Paneer Bhurji</li>
+							<li>Palak Paneer</li>
+							<li>Chole</li>
+							<li>Mixed Veg</li>
+							<li>Dal makhani</li>
+							<li>Aloo Gobi</li>
+							<li>Bhindi Masala</li>
+							<li>Beigan masala/Bharva baigan</li>
+							<li>Besan gatte</li>
+							<li>kadi pakora</li>
+							<li>Dal tadka</li>
+							<li>Dum Aloo</li>
+							<li>Paneer Pakoda</li>
+							<li>Moong Daal Pakoda</li>
+							<li>Bread pakora</li>
+							<li>Aloo bonda</li>
+							<li>Dabheli</li>
+							<li>Vada Pav</li>
+							<li>Dhokla</li>
+							<li>Dahi Wada</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Sweets</div>
+					<div class="menu-content">
+						<ul>
+							<li>Gulab Jamun</li>
+							<li>Rasmalai</li>
+							<li>Gajar Halwa</li>
+							<li>Rabadi</li>
+							<li>Churama ladoo</li>
+							<li>Rasgulla</li>
+							<li>Shahi Tukda</li>
+							<li>Besan Barfi/Mohan Thaal</li>
+							<li>Moong Ladoo</li>
+							<li>Udad Ladoo</li>
+							<li>Gond Ladoo (Edible Gum)</li>
+							<li>Til Ladoo</li>
+							<li>Atta Ladoo</li>
+							<li>Nariyal Ladoo</li>
+							<li>Pineapple Halwa</li>
+							<li>Kheer</li>
+							<li>Shreekhand</li>
+							<li>Milk Cake</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Rajasthani Special</div>
+					<div class="menu-content">
+						<ul>
+							<li>Daal Bati</li>
+							<li>Churma Ladoo</li>
+							<li>Besan Gitta</li>
+							<li>Rajasthani Kheer</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Sides</div>
+					<div class="menu-content">
+						<ul>
+							<li>Tamrind chutney</li>
+							<li>Mint Chutney</li>
+							<li>Papad</li>
+							<li>Raita</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Rice</div>
+					<div class="menu-content">
+						<ul>
+							<li>Veg Biryani</li>
+							<li>Paneer Biryani</li>
+							<li>Veg Pulav</li>
+							<li>Paneer Pulav</li>
+							<li>Jeera rice</li>
+							<li>Chinees Fried Rice</li>
+							<li>PavBhaji Pulav</li>
+							<li>Tomato Rice</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-header" onclick="toggleSection(this)">Mouth Freshener</div>
+					<div class="menu-content">
+						<ul>
+							<li>Pan</li>
+						</ul>
+					</div>
+				</div>
+			
+
+
         </section>
         
-        <section id="price">
-            <h2>Pricing</h2>
-            <p>We offer competitive pricing for both our party rental equipment and catering services. Contact us for a custom quote.</p>
+        <section id="BouncyHouse">
+            <h2>bouncy house</h2>
+            <p>We offer competitive bouncy house for both our party rental equipment and catering services. Contact us for a custom quote.</p>
             <div class="image-container">
-                <img src="13.jpeg" alt="Pricing Chart" />
-                <img src="14.jpeg" alt="Special Offers" />
+                <img src="bb1.jpeg" alt="Pricing Chart" />
+                <img src="bb2.jpeg" alt="Special Offers" />
             </div>
         </section>
         		
-	<section id="images1">
-            <h2>More Items</h2>
-            <p></p>
-            <div class="image-container">                
-					<img src="4.jpeg" alt="Special Offers" />
-					<img src="3.jpeg" alt="Special Offers" />
-            </div>
-        </section>
-		
-		<section id="images2">
-            <h2>More Items</h2>
-            <p></p>
-            <div class="image-container">
-                
-				<img src="2.jpeg" alt="Special Offers" />
-				<img src="77.jpeg" alt="Special Offers" />
-            </div>
-        </section>
-		
-		      <section id="images3">
-            <h2>More Items</h2>
-            <p></p>
-            <div class="image-container">
-                
-            </div>
-        </section>
-		<section id="images4">
-            <h2>More Items</h2>
-            <p></p>
-            <div class="image-container">
-                <img src="66.jpeg" alt="Special Offers" />
-				<img src="55.jpeg" alt="Special Offers" />
-            </div>
-        </section>
-		<section id="images5">
-            <h2>More Items</h2>
-            <p></p>
-            <div class="image-container">
-                <img src="13.jpeg" alt="Catering Display" />
-				<img src="11.jpeg" alt="Catering Display" />
-            </div>
-        </section>
+	    
 		
 				
         <section id="contact">
@@ -168,10 +325,20 @@
             <p>Email: akash.soni.usa@gmail.com</p>
             <p>Phone: (919) 375-3561</p>
             <div class="image-container">
-   			    <img src="2.jpeg" alt="Contact Form" />
-                <img src="3.jpeg" alt="Map Location" />
             </div>
         </section>
     </div>
+	
+	 <script>
+        function toggleSection(header) {
+            var content = header.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+	
 </body>
 </html>
