@@ -6,6 +6,41 @@
     <title>Aaal Enterprises LLC</title>
 	
     <style>
+	
+	* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('Banner.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-content p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,12 +48,12 @@
             padding: 0;
         }
         header {
-            background-color: #f2f3b0;
+            background-color: #a47dab;
             text-align: center;
             padding: 1rem;
         }
         nav {
-            background-color: #333;
+            background-color: #826387;
             color: #fff;
             padding: 0.5rem;
         }
@@ -36,17 +71,17 @@
         }
         .content {
             padding: 20px;
-			background-color: #f2f3b0;
+			background-color: #a47dab;
         }
         .image-container {
             display: flex;
-			background-color: #f2f3b0;
+			background-color: #a47dab;
             justify-content: space-around;
             margin-top: 20px;
         }
         .image-container img {
             max-width: 45%;
-			background-color: #f2f3b0;
+			background-color: #a47dab;
             height: auto;
         }
 		
@@ -57,7 +92,7 @@
             overflow: hidden;
         }
         .menu-header {
-            background-color: #333;
+            background-color: #826387;
             color: #fff;
             padding: 10px;
             cursor: pointer;
@@ -74,16 +109,52 @@
             padding: 5px 0;
         }
 		
+		h1 {
+            color: #2b2b2b;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2b2b2b;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #826387;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+		
     </style>
 </head>
 <body>
     <header>
-        <h1><u>AAA-L Enterprises LLC</u></h1>
-	    <br>
-		<h2>(919) 375-3561 </h2>
-	    <h3> Our service area covers the heart of the Research Triangle, including Apex, Cary, Chapel Hill, Durham, Garner, Holly Springs, Morrisville, Raleigh, the Research Triangle Park (RTP), and Wake Forest." </h3>
+        <div class="banner">
+        <div class="banner-content">
+            <p><u>AAA-L Enterprises LLC</u></p>
+            <p>(919) 375-3561</p>
+     		<p> Our service area covers the heart of the Research Triangle, including Apex, Cary, Chapel Hill, Durham, Garner, Holly Springs, Morrisville, Raleigh, the Research Triangle Park (RTP), and Wake Forest." </p>
+        </div>
+    </div>
+	   
     </header>
     
+	
+	
+	
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -91,6 +162,7 @@
             <li><a href="#party-rental">Party Rental</a></li>
             <li><a href="#vegetarian-catering">Vegetarian Catering</a></li>
             <li><a href="#BouncyHouse">Bouncy House</a></li>
+			<li><a href="#DeliveryService">Delivery Service - Apex Location</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
@@ -101,7 +173,7 @@
             <p>Your one-stop solution for party rentals and vegetarian catering. and Our service area covers the heart of the Research Triangle, including Apex, Cary, Chapel Hill, Durham, Garner, Holly Springs, Morrisville, Raleigh, the Research Triangle Park (RTP), and Wake Forest."</p>
             <div class="image-container">
 				<img src="baloon.jpeg" alt="Catering Display" />
-				<img src="ganesh.jpeg" alt="Our Team" />
+							<img src="Banner.jpeg" alt="Our History" />
             </div>
         </section>
         
@@ -132,13 +204,25 @@
             </div>
         </section>
 		
+		<section id="images6">
+            <h2>More Items</h2>
+            <p></p>
+            <div class="image-container">
+                <img src="diwali.jpeg" alt="Our History" />
+
+					<img src="ganesh.jpeg" alt="Our Team" />
+            </div>
+        </section>
+		
         <section id="about">
             <h2>About Us</h2>
-            <p>Aaal Enterprises LLC has been serving the community since 2010, providing top-notch party rental equipment and delicious vegetarian catering.</p>
-            <div class="image-container">				
-          
-                <img src="diwali.jpeg" alt="Our History" />
-				<img src="6feet.jpeg" alt="Our History" />
+            <p>Welcome to Aaal Enterprises LLC, your trusted partner in creating memorable celebrations since 2010. For over a decade, we've been bringing joy and excellence to events throughout our community through our dual specialties: premium party rental equipment and exceptional vegetarian catering.</p>
+			<p>Our commitment to quality is evident in every piece of rental equipment we provide, from elegant table settings to state-of-the-art sound systems. We take pride in maintaining our equipment to the highest standards, ensuring your event runs smoothly from start to finish.</p>
+			<p>In our catering division, we've mastered the art of vegetarian cuisine, creating flavorful dishes that delight both vegetarians and meat-eaters alike. Our expert chefs combine fresh, locally-sourced ingredients with global culinary techniques to craft memorable meals for any occasion.</p>
+			<p>What sets us apart is our dedication to personalized service. We understand that each event is unique, and we work closely with our clients to ensure every detail meets their vision and exceeds their expectations.</p>
+			<p>Whether you're planning a wedding, corporate event, birthday celebration, or community gathering, Aaal Enterprises LLC is here to make your event truly special with our comprehensive party rental solutions and mouth-watering vegetarian catering services.</p>
+			<p>Let us help make your next event unforgettable!</p>
+            <div class="image-container">
             </div>
         </section>
         
@@ -307,7 +391,7 @@
         </section>
         
         <section id="BouncyHouse">
-            <h2>bouncy house</h2>
+            <h2>Bouncy house</h2>
             <p>We offer competitive bouncy house for both our party rental equipment and catering services. Contact us for a custom quote.</p>
             <div class="image-container">
                 <img src="bb1.jpeg" alt="Pricing Chart" />
@@ -315,6 +399,126 @@
             </div>
         </section>
         		
+				
+		<section id="DeliveryService">
+            <h2>Delivery Service with in 10 miles (- Location: 1021 Pine Plaza Dr, Apex, NC 27523.)</h2>
+            <p>We offer Delivery Service from Location: 1021 Pine Plaza Dr, Apex, NC 27523. 10-mile radius from Apex Costco Coverage includes parts of: Apex,Cary,Holly Springs,New Hill,Jordan Lake area</p>
+
+			<h2>Service Area Coverage</h2>
+			<table>
+				<tr>
+					<th>Area</th>
+					<th>Coverage Details</th>
+				</tr>
+				<tr>
+					<td>Radius</td>
+					<td>10 miles from Apex Costco : 1021 Pine Plaza Dr, Apex, NC 27523</td>
+				</tr>
+				<tr>
+					<td>Cities Covered</td>
+					<td>Apex, Cary, Holly Springs, New Hill, Morrisville, Durham, and Jordan Lake area</td>
+				</tr>
+			</table>
+
+			<h2>Delivery Hours</h2>
+			<table>
+				<tr>
+					<th>Day</th>
+					<th>Hours</th>
+				</tr>
+				<tr>
+					<td>Monday - Friday</td>
+					<td>9:00 AM - 7:00 PM</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>9:00 AM - 6:00 PM</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>10:00 AM - 5:00 PM</td>
+				</tr>
+				<tr>
+					<td>Last Order</td>
+					<td>2 hours before closing</td>
+				</tr>
+			</table>
+
+			<h2>Delivery Options</h2>
+			<table>
+				<tr>
+					<th>Service Type</th>
+					<th>Delivery Time</th>
+					<th>Fee</th>
+					<th>Minimum Order</th>
+				</tr>
+				<tr>
+					<td>Standard Delivery</td>
+					<td>Within 24 hours</td>
+					<td>$9.95</td>
+					<td>$35</td>
+				</tr>
+				<tr>
+					<td>Same-Day Delivery</td>
+					<td>Within 4 hours</td>
+					<td>$15.95</td>
+					<td>$35</td>
+				</tr>
+				<tr>
+					<td>Express Delivery</td>
+					<td>Within 2 hours</td>
+					<td>$25.95</td>
+					<td>$50</td>
+				</tr>
+			</table>
+			
+			<h2>Eligible Items</h2>
+			<table>
+				<tr>
+					<th>Eligible</th>
+					<th>Not Eligible</th>
+				</tr>
+				<tr>
+					<td>
+						- Grocery items<br>
+						- Household supplies<br>
+						- Electronics<br>
+						- Personal care items<br>
+						- Fresh produce<br>
+						- Frozen foods
+					</td>
+					<td>
+						- Alcohol<br>
+						- Tobacco products<br>
+						- Pharmacy items<br>
+						- Tire center services<br>
+						- Gas station services
+					</td>
+				</tr>
+			</table>
+			
+			<h2>Customer Support</h2>
+			<table>
+				<tr>
+					<th>Contact Method</th>
+					<th>Details</th>
+				</tr>
+				<tr>
+					<td>Phone/Text</td>
+					<td>(919) 375-3561</td>
+				</tr>
+				<tr>
+					<td>Hours</td>
+					<td>7 days a week, 9:00 AM - 10:00 PM EST</td>
+				</tr>
+			</table>
+
+            <div class="image-container">
+                
+            </div>
+        </section>
+        		
+
 	    
 		
 				
